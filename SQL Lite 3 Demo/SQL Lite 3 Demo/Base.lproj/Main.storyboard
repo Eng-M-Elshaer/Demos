@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SQL_Lite_3_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1XC-n5-gSX">
+                                <rect key="frame" x="62" y="229" width="290" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEi-Ye-Nhg">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="89.5"/>
+                                        <state key="normal" title="Create Table"/>
+                                        <connections>
+                                            <action selector="createTable" destination="BYZ-38-t0r" eventType="touchUpInside" id="pj7-Oy-FUJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCf-J6-VbM">
+                                        <rect key="frame" x="0.0" y="89.5" width="290" height="89.5"/>
+                                        <state key="normal" title="Instert User"/>
+                                        <connections>
+                                            <action selector="insertUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="73k-CS-9Us"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-5A-aYa">
+                                        <rect key="frame" x="0.0" y="179" width="290" height="90"/>
+                                        <state key="normal" title="All Users"/>
+                                        <connections>
+                                            <action selector="listUsers" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxE-Kd-piC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJY-ef-IzV">
+                                        <rect key="frame" x="0.0" y="269" width="290" height="89.5"/>
+                                        <state key="normal" title="Update User"/>
+                                        <connections>
+                                            <action selector="updateUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBm-zf-Y3t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ap8-PF-o1T">
+                                        <rect key="frame" x="0.0" y="358.5" width="290" height="89.5"/>
+                                        <state key="normal" title="Delete User"/>
+                                        <connections>
+                                            <action selector="deleteUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q96-ht-JhK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1XC-n5-gSX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4vn-fa-WuB"/>
+                            <constraint firstItem="1XC-n5-gSX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="J8Z-HZ-LPF"/>
+                            <constraint firstItem="1XC-n5-gSX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="LbW-QC-uXn"/>
+                            <constraint firstItem="1XC-n5-gSX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="lGd-2K-kT8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

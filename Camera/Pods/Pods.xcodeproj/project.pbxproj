@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DFD9465E0AAE8614184C03D9F62C4ED /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0A2F911B14B71597B051F01B01D8F /* CameraGlobals.swift */; };
+		11C23445603D1FD9E3BF00C6A6E246E2 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E5D93410C541E19AFBD2E52D07E79 /* VolumeControl.swift */; };
+		193F9C774730F9261F90EC8038EE6E9B /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C1FA3CBD9F262C7AF812E1DF1AE57E /* ConfirmViewController.swift */; };
+		1C0553F78059C96FABCCAF04322EEB8A /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9712497BF155B10B0A5C6EDE4EEF9D8 /* ImageCell.swift */; };
+		2254FE6B1DC9771263A362AB153ED243 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5988D86E1C825CF55FBEE48CAC87F /* Utilities.swift */; };
+		3359872B46402CBF8AB34908F18C8DC5 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6CA1A7D37BD9F1B5761311E386B1A2 /* ImageFetcher.swift */; };
+		36D474F702E4A6EFBE0EFB1810316361 /* ALCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B1EC17D159168009C255E69E1287A5 /* ALCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427ACC314A752FCC5A077D489EBD7281 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D8B2FA398B7DA56C6214DFF497B50 /* PhotoLibraryViewController.swift */; };
+		43A808DCAEBDFEE02457771A28DE1FB0 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27ACB2103510EF30D53459AE040D7B21 /* CameraViewAssets.xcassets */; };
+		4BE4EAA5ED79FCC8FA22FE05B7F7D56A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED29DF17FB149098B5CD07D05B28143 /* CameraViewController.swift */; };
+		703B3EC626AA8F4A2DEEB66AEEAB75F6 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31616D13CFAA7AA60D3B238683E14EDA /* CroppingParameters.swift */; };
+		78DF7C4599D2C448B89014EA39B0B397 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ED55E412153F7F5B67DB97D3B90F0 /* UIViewExtensions.swift */; };
+		81EA1538974F07EB24B6B05AA6F5ACC5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1FE1FA9C2531FAD9EB54DD365700CB /* CameraView.swift */; };
+		83068D13E37C626FAB8BD32E56AFD47B /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17003F82B6FAE38203ABAC1130B365A5 /* CropOverlay.swift */; };
+		83EF13AA0B51DB029252A557AE4BD54F /* Pods-Camera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E680C9054A49E6E04501744656F1D5D /* Pods-Camera-dummy.m */; };
+		8C39D9C22E7824A72C49E8B183B95E51 /* Pods-Camera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AE16E5A9E1CE21575608241D996803 /* Pods-Camera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91317BCC00F947943ACC65788569188B /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5C9C9E22E4FB45F34B83327BD107D /* CameraViewControllerConstraint.swift */; };
+		9ADFBFBD910E13910223F374A23D94C5 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B436CEB8402434AAF1D37A387B0A8B8 /* ConfirmViewController.xib */; };
+		9FD7611CDE0583A9BF90E03608FAA3AE /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0349EFFD0DD84C6BCEFD4B73BC8D8 /* UIButtonExtensions.swift */; };
+		A3EB99C70A11DFAF4C0923297990A11C /* ALCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1CC8E7AB1D2AF9C1FA0A3C4BB19486 /* ALCameraViewController-dummy.m */; };
+		B64F75025C2D8727437A7EC138B213D1 /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA09CF8222FC4E1E6F1518916C01FAB /* CameraShot.swift */; };
+		B7B3E3272643ED2871A1B8429C031DF2 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCFF56F94BA0287BD8D2DA9691960220 /* CameraView.strings */; };
+		BD050562FFB5D1DF482912CE473025C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		D0B7393804A4A049DB4A3DBF441C5E31 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E09728AD2628904B1A1D09EC37B55 /* PermissionsView.swift */; };
+		DF2A55F33DBE44AD2DE35FB3711B93DB /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA38750A933BA3BD2650143EDF6F415 /* SingleImageSaver.swift */; };
+		E62CD82D7025550D556680A39C92149A /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C876CB299EF98E4FE1586527FB6942 /* SingleImageFetcher.swift */; };
+		F26EF37939A2AEA91EBB9BDC962D1910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FE3F46E171DC585DFDE719B099DA516B /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B034BD73E5F7ECF2CC335A4FAAE41 /* PhotoLibraryAuthorizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		591B5FCC80D1EA92B397C7BB8A4D6F32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D73CE4D20C1559CE5586041DB209DAB1;
+			remoteInfo = ALCameraViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		111C173D55AFE5B3861AB10124690167 /* ALCameraViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALCameraViewController-Info.plist"; sourceTree = "<group>"; };
+		1279C0FBE03317A9A5AAEB4B08CDFB2D /* Pods-Camera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Camera-acknowledgements.plist"; sourceTree = "<group>"; };
+		17003F82B6FAE38203ABAC1130B365A5 /* CropOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropOverlay.swift; path = ALCameraViewController/Views/CropOverlay.swift; sourceTree = "<group>"; };
+		1A1FE1FA9C2531FAD9EB54DD365700CB /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = ALCameraViewController/Views/CameraView.swift; sourceTree = "<group>"; };
+		1E680C9054A49E6E04501744656F1D5D /* Pods-Camera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Camera-dummy.m"; sourceTree = "<group>"; };
+		20C5C9C9E22E4FB45F34B83327BD107D /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewControllerConstraint.swift; path = ALCameraViewController/ViewController/CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		25705DA1FDE8A2005BEBC91C4094DD7D /* Pods-Camera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Camera-Info.plist"; sourceTree = "<group>"; };
+		27ACB2103510EF30D53459AE040D7B21 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CameraViewAssets.xcassets; path = ALCameraViewController/CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		31616D13CFAA7AA60D3B238683E14EDA /* CroppingParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CroppingParameters.swift; path = ALCameraViewController/Utilities/CroppingParameters.swift; sourceTree = "<group>"; };
+		39FD02C552632013DA8D00DF97F1DE61 /* Pods-Camera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Camera.modulemap"; sourceTree = "<group>"; };
+		43805EE5AB462FAC41466AA9473339C9 /* Pods-Camera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Camera.release.xcconfig"; sourceTree = "<group>"; };
+		4B436CEB8402434AAF1D37A387B0A8B8 /* ConfirmViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ConfirmViewController.xib; path = ALCameraViewController/ViewController/ConfirmViewController.xib; sourceTree = "<group>"; };
+		4E1CC8E7AB1D2AF9C1FA0A3C4BB19486 /* ALCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		6141FF4582FAEAED5DF2914477CBDF07 /* ALCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-prefix.pch"; sourceTree = "<group>"; };
+		6BA09CF8222FC4E1E6F1518916C01FAB /* CameraShot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraShot.swift; path = ALCameraViewController/Utilities/CameraShot.swift; sourceTree = "<group>"; };
+		6ED29DF17FB149098B5CD07D05B28143 /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ALCameraViewController/ViewController/CameraViewController.swift; sourceTree = "<group>"; };
+		72E0A2F911B14B71597B051F01B01D8F /* CameraGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGlobals.swift; path = ALCameraViewController/Utilities/CameraGlobals.swift; sourceTree = "<group>"; };
+		7EECF56548BBF08D29F0375BBF0497B1 /* Pods_Camera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Camera.framework; path = "Pods-Camera.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C876CB299EF98E4FE1586527FB6942 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageFetcher.swift; path = ALCameraViewController/Utilities/SingleImageFetcher.swift; sourceTree = "<group>"; };
+		89B5988D86E1C825CF55FBEE48CAC87F /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ALCameraViewController/Utilities/Utilities.swift; sourceTree = "<group>"; };
+		980F7A4E68D99F25A4A3D492A36B8CFC /* ALCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALCameraViewController.framework; path = ALCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A87D8B2FA398B7DA56C6214DFF497B50 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryViewController.swift; path = ALCameraViewController/ViewController/PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		AA6CA1A7D37BD9F1B5761311E386B1A2 /* ImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFetcher.swift; path = ALCameraViewController/Utilities/ImageFetcher.swift; sourceTree = "<group>"; };
+		ADA38750A933BA3BD2650143EDF6F415 /* SingleImageSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageSaver.swift; path = ALCameraViewController/Utilities/SingleImageSaver.swift; sourceTree = "<group>"; };
+		B48ED55E412153F7F5B67DB97D3B90F0 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ALCameraViewController/Utilities/UIViewExtensions.swift; sourceTree = "<group>"; };
+		B5C1FA3CBD9F262C7AF812E1DF1AE57E /* ConfirmViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmViewController.swift; path = ALCameraViewController/ViewController/ConfirmViewController.swift; sourceTree = "<group>"; };
+		BB3B034BD73E5F7ECF2CC335A4FAAE41 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryAuthorizer.swift; path = ALCameraViewController/Utilities/PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		BCFF56F94BA0287BD8D2DA9691960220 /* CameraView.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = CameraView.strings; path = ALCameraViewController/CameraView.strings; sourceTree = "<group>"; };
+		BEDE825D434E0C4A847759B377CECF33 /* ALCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALCameraViewController.modulemap; sourceTree = "<group>"; };
+		C94E09728AD2628904B1A1D09EC37B55 /* PermissionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionsView.swift; path = ALCameraViewController/Views/PermissionsView.swift; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEF0349EFFD0DD84C6BCEFD4B73BC8D8 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtensions.swift; path = ALCameraViewController/Utilities/UIButtonExtensions.swift; sourceTree = "<group>"; };
+		D9712497BF155B10B0A5C6EDE4EEF9D8 /* ImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = ALCameraViewController/Views/ImageCell.swift; sourceTree = "<group>"; };
+		DC166B85F0ABAE2AA93DDB6A0EAB66D1 /* Pods-Camera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Camera.debug.xcconfig"; sourceTree = "<group>"; };
+		E2AE16E5A9E1CE21575608241D996803 /* Pods-Camera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Camera-umbrella.h"; sourceTree = "<group>"; };
+		F4857F090FBD017C4514071CA120A682 /* Pods-Camera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Camera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6B1EC17D159168009C255E69E1287A5 /* ALCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-umbrella.h"; sourceTree = "<group>"; };
+		F8C4FAB5211C05E92CCA76E39BB1D372 /* ALCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.xcconfig; sourceTree = "<group>"; };
+		FB9FA8CE253A0962A4246476F13A0071 /* Pods-Camera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Camera-frameworks.sh"; sourceTree = "<group>"; };
+		FD6E5D93410C541E19AFBD2E52D07E79 /* VolumeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VolumeControl.swift; path = ALCameraViewController/Utilities/VolumeControl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292B8B3F28065DEF9ADE2B9ABDE3E923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD050562FFB5D1DF482912CE473025C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2008875249DB68F8C7AA73A374BB465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F26EF37939A2AEA91EBB9BDC962D1910 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1143A3069BCFE5D0F5E48C6B89590CBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				980F7A4E68D99F25A4A3D492A36B8CFC /* ALCameraViewController.framework */,
+				7EECF56548BBF08D29F0375BBF0497B1 /* Pods_Camera.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247D7EFA0A8A9DF3A13E431FCAA374EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE825D434E0C4A847759B377CECF33 /* ALCameraViewController.modulemap */,
+				F8C4FAB5211C05E92CCA76E39BB1D372 /* ALCameraViewController.xcconfig */,
+				4E1CC8E7AB1D2AF9C1FA0A3C4BB19486 /* ALCameraViewController-dummy.m */,
+				111C173D55AFE5B3861AB10124690167 /* ALCameraViewController-Info.plist */,
+				6141FF4582FAEAED5DF2914477CBDF07 /* ALCameraViewController-prefix.pch */,
+				F6B1EC17D159168009C255E69E1287A5 /* ALCameraViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ALCameraViewController";
+			sourceTree = "<group>";
+		};
+		323F9B105B07D05BCC8D2EB09EE24CF8 /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				72E0A2F911B14B71597B051F01B01D8F /* CameraGlobals.swift */,
+				6BA09CF8222FC4E1E6F1518916C01FAB /* CameraShot.swift */,
+				1A1FE1FA9C2531FAD9EB54DD365700CB /* CameraView.swift */,
+				6ED29DF17FB149098B5CD07D05B28143 /* CameraViewController.swift */,
+				20C5C9C9E22E4FB45F34B83327BD107D /* CameraViewControllerConstraint.swift */,
+				B5C1FA3CBD9F262C7AF812E1DF1AE57E /* ConfirmViewController.swift */,
+				17003F82B6FAE38203ABAC1130B365A5 /* CropOverlay.swift */,
+				31616D13CFAA7AA60D3B238683E14EDA /* CroppingParameters.swift */,
+				D9712497BF155B10B0A5C6EDE4EEF9D8 /* ImageCell.swift */,
+				AA6CA1A7D37BD9F1B5761311E386B1A2 /* ImageFetcher.swift */,
+				C94E09728AD2628904B1A1D09EC37B55 /* PermissionsView.swift */,
+				BB3B034BD73E5F7ECF2CC335A4FAAE41 /* PhotoLibraryAuthorizer.swift */,
+				A87D8B2FA398B7DA56C6214DFF497B50 /* PhotoLibraryViewController.swift */,
+				86C876CB299EF98E4FE1586527FB6942 /* SingleImageFetcher.swift */,
+				ADA38750A933BA3BD2650143EDF6F415 /* SingleImageSaver.swift */,
+				CEF0349EFFD0DD84C6BCEFD4B73BC8D8 /* UIButtonExtensions.swift */,
+				B48ED55E412153F7F5B67DB97D3B90F0 /* UIViewExtensions.swift */,
+				89B5988D86E1C825CF55FBEE48CAC87F /* Utilities.swift */,
+				FD6E5D93410C541E19AFBD2E52D07E79 /* VolumeControl.swift */,
+				F5AF518DAB2F59F6DE9B5C364D06250B /* Resources */,
+				247D7EFA0A8A9DF3A13E431FCAA374EB /* Support Files */,
+			);
+			name = ALCameraViewController;
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9C5E8FFF2B51D5016EE45C1B28E42E93 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8079054DC4D1A6E8ED1B7DE198E99AF /* Pods-Camera */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B8079054DC4D1A6E8ED1B7DE198E99AF /* Pods-Camera */ = {
+			isa = PBXGroup;
+			children = (
+				39FD02C552632013DA8D00DF97F1DE61 /* Pods-Camera.modulemap */,
+				F4857F090FBD017C4514071CA120A682 /* Pods-Camera-acknowledgements.markdown */,
+				1279C0FBE03317A9A5AAEB4B08CDFB2D /* Pods-Camera-acknowledgements.plist */,
+				1E680C9054A49E6E04501744656F1D5D /* Pods-Camera-dummy.m */,
+				FB9FA8CE253A0962A4246476F13A0071 /* Pods-Camera-frameworks.sh */,
+				25705DA1FDE8A2005BEBC91C4094DD7D /* Pods-Camera-Info.plist */,
+				E2AE16E5A9E1CE21575608241D996803 /* Pods-Camera-umbrella.h */,
+				DC166B85F0ABAE2AA93DDB6A0EAB66D1 /* Pods-Camera.debug.xcconfig */,
+				43805EE5AB462FAC41466AA9473339C9 /* Pods-Camera.release.xcconfig */,
+			);
+			name = "Pods-Camera";
+			path = "Target Support Files/Pods-Camera";
+			sourceTree = "<group>";
+		};
+		B98BC779EDABCA25B65E8CBC56F317CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				323F9B105B07D05BCC8D2EB09EE24CF8 /* ALCameraViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B98BC779EDABCA25B65E8CBC56F317CD /* Pods */,
+				1143A3069BCFE5D0F5E48C6B89590CBD /* Products */,
+				9C5E8FFF2B51D5016EE45C1B28E42E93 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5AF518DAB2F59F6DE9B5C364D06250B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF56F94BA0287BD8D2DA9691960220 /* CameraView.strings */,
+				27ACB2103510EF30D53459AE040D7B21 /* CameraViewAssets.xcassets */,
+				4B436CEB8402434AAF1D37A387B0A8B8 /* ConfirmViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1ECCF315340EC951F6B73C47014E770F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D474F702E4A6EFBE0EFB1810316361 /* ALCameraViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B57CE272C8C170B2FBA717D8D568E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C39D9C22E7824A72C49E8B183B95E51 /* Pods-Camera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		222AA1F746840F6AC4537F2B7730F264 /* Pods-Camera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 887CA48068E29B10E6DBA95031264A5C /* Build configuration list for PBXNativeTarget "Pods-Camera" */;
+			buildPhases = (
+				94B57CE272C8C170B2FBA717D8D568E8 /* Headers */,
+				7117D3F349E629EE2274DBE0696A3787 /* Sources */,
+				A2008875249DB68F8C7AA73A374BB465 /* Frameworks */,
+				857D6002A5249E1334E4ABE79523190B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F64D641E48DB2AAB5313AFEA54BF64 /* PBXTargetDependency */,
+			);
+			name = "Pods-Camera";
+			productName = "Pods-Camera";
+			productReference = 7EECF56548BBF08D29F0375BBF0497B1 /* Pods_Camera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D73CE4D20C1559CE5586041DB209DAB1 /* ALCameraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225FF6EDE87B1BB419502DB2DC3E4AD4 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */;
+			buildPhases = (
+				1ECCF315340EC951F6B73C47014E770F /* Headers */,
+				47E788A3A21DD1CA106BA8B1A5BDA7A6 /* Sources */,
+				292B8B3F28065DEF9ADE2B9ABDE3E923 /* Frameworks */,
+				3DF7071A48EFB61122519074137B8185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ALCameraViewController;
+			productName = ALCameraViewController;
+			productReference = 980F7A4E68D99F25A4A3D492A36B8CFC /* ALCameraViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1143A3069BCFE5D0F5E48C6B89590CBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73CE4D20C1559CE5586041DB209DAB1 /* ALCameraViewController */,
+				222AA1F746840F6AC4537F2B7730F264 /* Pods-Camera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF7071A48EFB61122519074137B8185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B3E3272643ED2871A1B8429C031DF2 /* CameraView.strings in Resources */,
+				43A808DCAEBDFEE02457771A28DE1FB0 /* CameraViewAssets.xcassets in Resources */,
+				9ADFBFBD910E13910223F374A23D94C5 /* ConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857D6002A5249E1334E4ABE79523190B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47E788A3A21DD1CA106BA8B1A5BDA7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EB99C70A11DFAF4C0923297990A11C /* ALCameraViewController-dummy.m in Sources */,
+				0DFD9465E0AAE8614184C03D9F62C4ED /* CameraGlobals.swift in Sources */,
+				B64F75025C2D8727437A7EC138B213D1 /* CameraShot.swift in Sources */,
+				81EA1538974F07EB24B6B05AA6F5ACC5 /* CameraView.swift in Sources */,
+				4BE4EAA5ED79FCC8FA22FE05B7F7D56A /* CameraViewController.swift in Sources */,
+				91317BCC00F947943ACC65788569188B /* CameraViewControllerConstraint.swift in Sources */,
+				193F9C774730F9261F90EC8038EE6E9B /* ConfirmViewController.swift in Sources */,
+				83068D13E37C626FAB8BD32E56AFD47B /* CropOverlay.swift in Sources */,
+				703B3EC626AA8F4A2DEEB66AEEAB75F6 /* CroppingParameters.swift in Sources */,
+				1C0553F78059C96FABCCAF04322EEB8A /* ImageCell.swift in Sources */,
+				3359872B46402CBF8AB34908F18C8DC5 /* ImageFetcher.swift in Sources */,
+				D0B7393804A4A049DB4A3DBF441C5E31 /* PermissionsView.swift in Sources */,
+				FE3F46E171DC585DFDE719B099DA516B /* PhotoLibraryAuthorizer.swift in Sources */,
+				427ACC314A752FCC5A077D489EBD7281 /* PhotoLibraryViewController.swift in Sources */,
+				E62CD82D7025550D556680A39C92149A /* SingleImageFetcher.swift in Sources */,
+				DF2A55F33DBE44AD2DE35FB3711B93DB /* SingleImageSaver.swift in Sources */,
+				9FD7611CDE0583A9BF90E03608FAA3AE /* UIButtonExtensions.swift in Sources */,
+				78DF7C4599D2C448B89014EA39B0B397 /* UIViewExtensions.swift in Sources */,
+				2254FE6B1DC9771263A362AB153ED243 /* Utilities.swift in Sources */,
+				11C23445603D1FD9E3BF00C6A6E246E2 /* VolumeControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7117D3F349E629EE2274DBE0696A3787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EF13AA0B51DB029252A557AE4BD54F /* Pods-Camera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F64D641E48DB2AAB5313AFEA54BF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCameraViewController;
+			target = D73CE4D20C1559CE5586041DB209DAB1 /* ALCameraViewController */;
+			targetProxy = 591B5FCC80D1EA92B397C7BB8A4D6F32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3048B0C5C704DFFF688DA57F5380ED58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6FD89A60E8A8A9831330D0837D379DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43805EE5AB462FAC41466AA9473339C9 /* Pods-Camera.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Camera/Pods-Camera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Camera/Pods-Camera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93C6C8969BA28D7C198AC6948763EA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C4FAB5211C05E92CCA76E39BB1D372 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94EFF686772D6799F8CFDB64B6F781D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC166B85F0ABAE2AA93DDB6A0EAB66D1 /* Pods-Camera.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Camera/Pods-Camera-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Camera/Pods-Camera.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3593825E60200D7126283954C04629D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C4FAB5211C05E92CCA76E39BB1D372 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		225FF6EDE87B1BB419502DB2DC3E4AD4 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3593825E60200D7126283954C04629D /* Debug */,
+				93C6C8969BA28D7C198AC6948763EA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0C8287D755FD95091CF35D87FB8B2D /* Debug */,
+				3048B0C5C704DFFF688DA57F5380ED58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		887CA48068E29B10E6DBA95031264A5C /* Build configuration list for PBXNativeTarget "Pods-Camera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EFF686772D6799F8CFDB64B6F781D0 /* Debug */,
+				6FD89A60E8A8A9831330D0837D379DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laptop Wallpaper (30)" translatesAutoresizingMaskIntoConstraints="NO" id="p5M-C8-1UY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqT-o7-71o">
+                                <rect key="frame" x="10" y="173" width="68" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-NC-prj">
+                                <rect key="frame" x="96" y="229" width="28" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTu-lM-r1R">
+                                <rect key="frame" x="10" y="229" width="53" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nW-dc-fnN">
+                                <rect key="frame" x="10" y="287" width="61" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZn-p0-oXo">
+                                <rect key="frame" x="96" y="287" width="53" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mohamed Ibrahim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isz-zu-dqB">
+                                <rect key="frame" x="96" y="173" width="188" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laptop Wallpaper (5)" translatesAutoresizingMaskIntoConstraints="NO" id="Pbh-P8-xqe">
+                                <rect key="frame" x="107" y="534" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="21w-7h-qRc"/>
+                                    <constraint firstAttribute="width" secondItem="Pbh-P8-xqe" secondAttribute="height" id="yRx-uh-5UC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pbh-P8-xqe" firstAttribute="centerX" secondItem="p5M-C8-1UY" secondAttribute="centerX" id="3yZ-ak-ca8"/>
+                            <constraint firstItem="7nW-dc-fnN" firstAttribute="top" secondItem="NTu-lM-r1R" secondAttribute="bottom" constant="29" id="CGd-Sn-CZU"/>
+                            <constraint firstItem="NTu-lM-r1R" firstAttribute="leading" secondItem="p5M-C8-1UY" secondAttribute="leading" constant="10" id="EJa-tn-wvc"/>
+                            <constraint firstItem="p5M-C8-1UY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EjG-sN-MRF"/>
+                            <constraint firstItem="Pbh-P8-xqe" firstAttribute="top" secondItem="7nW-dc-fnN" secondAttribute="bottom" constant="218" id="NML-bK-N7i"/>
+                            <constraint firstItem="OZn-p0-oXo" firstAttribute="centerY" secondItem="7nW-dc-fnN" secondAttribute="centerY" id="Vqi-xC-vcy"/>
+                            <constraint firstItem="NTu-lM-r1R" firstAttribute="top" secondItem="vqT-o7-71o" secondAttribute="bottom" constant="27" id="W9g-KM-nyF"/>
+                            <constraint firstItem="Isz-zu-dqB" firstAttribute="leading" secondItem="vqT-o7-71o" secondAttribute="trailing" constant="18" id="WqP-y7-qXs"/>
+                            <constraint firstItem="vqT-o7-71o" firstAttribute="leading" secondItem="p5M-C8-1UY" secondAttribute="leading" constant="10" id="dbf-PU-JJh"/>
+                            <constraint firstItem="7nW-dc-fnN" firstAttribute="leading" secondItem="p5M-C8-1UY" secondAttribute="leading" constant="10" id="fuH-dj-HXf"/>
+                            <constraint firstItem="Isz-zu-dqB" firstAttribute="centerY" secondItem="vqT-o7-71o" secondAttribute="centerY" id="hmG-2k-JvQ"/>
+                            <constraint firstItem="p5M-C8-1UY" firstAttribute="top" secondItem="vqT-o7-71o" secondAttribute="bottom" constant="-158" id="iTP-Ta-k6s"/>
+                            <constraint firstItem="OZn-p0-oXo" firstAttribute="leading" secondItem="7nW-dc-fnN" secondAttribute="trailing" constant="25" id="lWn-Wp-cgk"/>
+                            <constraint firstItem="Nsp-NC-prj" firstAttribute="centerY" secondItem="NTu-lM-r1R" secondAttribute="centerY" id="nZw-3P-NVq"/>
+                            <constraint firstItem="p5M-C8-1UY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oyq-7t-qSn"/>
+                            <constraint firstItem="p5M-C8-1UY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vwR-ZX-KXM"/>
+                            <constraint firstItem="p5M-C8-1UY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xkF-EJ-cOz"/>
+                            <constraint firstItem="Nsp-NC-prj" firstAttribute="leading" secondItem="NTu-lM-r1R" secondAttribute="trailing" constant="33" id="xuq-u4-qBm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="Nsp-NC-prj" id="inX-F6-677"/>
+                        <outlet property="nameLabel" destination="Isz-zu-dqB" id="XiX-CB-FX1"/>
+                        <outlet property="skillLabel" destination="OZn-p0-oXo" id="DrT-Uy-v6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-496" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Laptop Wallpaper (30)" width="2560" height="1440"/>
+        <image name="Laptop Wallpaper (5)" width="2560" height="1440"/>
+    </resources>
+</document>
